@@ -15,7 +15,7 @@ FIG_WINDOW_SIZE = (12,12)
         
 #########################################################################################################3
 #
-#         dataset() class
+#         dataset() class  (not clear if needed yet)
 #
 
 class dataset():
