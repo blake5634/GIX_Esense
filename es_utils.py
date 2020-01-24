@@ -22,6 +22,12 @@ def print_deb(flag, string):
 def db_error(str):
     print('\nError: '+str+'\n')
     quit()
+    
+    
+def list_locations():
+    print('refer to {} locations by number:'.format(len(locations)))
+    for i,l in enumerate(locations):
+        print(i, '  ', l)
 
 def print_help():
     intro = '''
@@ -35,9 +41,7 @@ def print_help():
     
     print(intro)
     print(usage)
-    print('refer to {} locations by number:'.format(len(locations)))
-    for i,l in enumerate(locations):
-        print(i, '  ', l)
+    list_locations()
 
 def setup_location_list(locs):
     for l in locs:

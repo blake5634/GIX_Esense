@@ -48,7 +48,6 @@ else:
     locations = sorted(list(data.Location.unique()))
     print(locations)
     setup_location_list(locations)
-    print_help()
     ###############################
     #
     # Process command line (now that we know data characteristics)
@@ -71,35 +70,28 @@ elif len(sys.argv) == 3:
 
 print ('Starting up with location {} and unit: {}'.format(desloc, unit))
 
-
-
 #print(data.head)
-rename_tags(data)
+rename_tags(data)   # give the measurement types more compact names ('SPL', 'LUX')
 #print(data.head)
-    
-db_g0 = dataset(data)  
-#as {} records'.format(desloc, len(db_g0.df.index)))
 
-## also create custom db's for each grp
-#db_g1 = db_g0.select_group(1)
-#db_g2 = db_g0.select_group(2)
-
-## descriptive string
-#gdesc = 'ALL Patients'
-#db_selected = db_g0
-#if desloc == 1:
-    #gdesc = 'BEFORE 1-Feb-2014'
-    #db_selected = db_g1
-#if desloc == 2:
-    #gdesc = 'AFTER 1-Feb-2014'
-    #db_selected = db_g2
-    
-    
-
-if True:
-    locname = locations[desloc]
-    sel_data = rq.MeasurementHisto(db_g0.df,locname,unit)
-    #sel_data = rq.MeasurementHisto(db_g0.df,locname,'LUX')
-    
+locname = locations[desloc]  # convert from int to full string name
      
-    plt.show()
+if True:        
+    #
+    #  Are two measurement distributions statistically different?
+    #  (apply the T-test)
+    print('Enter a location to compare with {}'.format(locname))
+    list_locations()
+    l2 = input('Location selection: (integer):')
+    l2 = int(l2)
+    loc2=locations[l2]
+    rq.Difference(data, locname, loc2, unit)
+
+if False:
+    #
+    #  Make a basic histogram of measurements in a single location
+    #
+    sel_data = rq.MeasurementHisto(data,locname,unit)     
+
+# show all graphs     
+plt.show()

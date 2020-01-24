@@ -1,6 +1,6 @@
 # Analytics for TECHIN 512 Lab X, Distributed Environmental Sensing
 
-Requires Python 3
+Requires Python 3 and Pandas
 
 usage:
 
