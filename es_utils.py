@@ -43,6 +43,14 @@ def print_help():
     print(usage)
     list_locations()
 
+def select_InstPhone(name, dP, dS):
+    print ('Selecting Data source: ',name)
+    if name=='Phone':
+        return dP
+    elif name.startswith('Inst'):
+        return dS
+    db_error('select_InstPhone: unknown source: '+name)
+    
 def setup_location_list(locs):
     for l in locs:
         locations.append(l)
@@ -54,7 +62,7 @@ def rename_tags(data):
     Replace long form names of measurement Quantity with 3-letter units
     for cleaner access queries.
     '''
-    name_map={'Sound pressure level, SPL (dBA)':'SPL', 'Light Flux':'LUX'}
+    name_map={'Sound pressure level, SPL (dBA)':'SPL', 'Light Flux':'LUX','Sound pressure level, SPL(dBA)':'SPL', 'Light Flux':'LUX'}
     for i,r in data.iterrows():
         data.at[i,'Quantity'] = name_map[r['Quantity']]
         

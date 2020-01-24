@@ -28,8 +28,8 @@ def Difference(dataset, loc1, loc2, unit):
     m1 = dloc1[mcol].mean()
     m2 = dloc2[mcol].mean()
     print(' \nMeasurement: '+unit)
-    print(' {:10} vs.  {:10} '.format(loc1, loc2))
-    print('   {:4.1f} {}    {:4.1f} {} Diff: {:4.1f} {}'.format(m1,unit,m2,unit, m2-m1,unit))
+    print(' {:^20} vs.  {:^20} '.format(loc1, loc2))
+    print(' {:^20.1f} {}         {:^20.1f} {}                Diff: {:4.1f} {}'.format(m1,unit,m2,unit, m2-m1,unit))
     print('T stat: {:4.2f}, P-value: {:4.2f}'.format(T,p))
     if (p < 0.05):
         print('The difference is SIGNIFICANT')

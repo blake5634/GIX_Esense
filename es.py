@@ -18,7 +18,8 @@ import rsrch_questions as rq
 #from matplotlib.ticker import MaxNLocator
 
 results = []
-filename = 'Data/SensingResponses_23-Jan-2020.csv'
+Sfilename = 'Data/DeviceSensing_24-Jan-2020.csv'
+Pfilename = 'Data/PhoneSensing_24-Jan-2020.csv'
 
 #usage = '''
     #>es [location] [unit]
@@ -26,32 +27,54 @@ filename = 'Data/SensingResponses_23-Jan-2020.csv'
         #- unit  =   SPL or LUX
     #'''
 desloc = 0
-if not os.path.exists(filename):
+if not os.path.exists(Sfilename):
     print ("Can't find data file: {}".format(filename))
     quit()
-else:
-    
-    data = pd.read_csv(filename,sep=',', engine='python') # '\s+' regexp for whitespace
-    data = data.fillna('') # empty cells become empty strings!
-    
-    #profile = pandas_profiling.ProfileReport(data, title='ES data Profiling Report')
- # can output to file...
-# profile.to_file(outputfile="/tmp/myoutputfile.html")
-    
-    #profile = pfr.ProfileReport(data, title='ES data Profiling Report')
-    #profile.to_file(output_file="env_data.html")
-    #quit()
-    print('Data frame columns: ')
-    print(list(data.columns.values))
-    
-    print('Unique Locations so far: ')
-    locations = sorted(list(data.Location.unique()))
-    print(locations)
-    setup_location_list(locations)
-    ###############################
-    #
-    # Process command line (now that we know data characteristics)
-    #
+if not os.path.exists(Pfilename):
+    print ("Can't find data file: {}".format(filename))
+    quit()
+
+#
+#  Data files are opened
+#
+
+# 
+# read and process Sensor measurements (from instruments)
+dataS = pd.read_csv(Sfilename,sep=',', engine='python') # '\s+' regexp for whitespace
+dataS = dataS.fillna('') # empty cells become empty strings!
+
+# 
+# read and process Cell Phope measurements (from instruments)
+dataP = pd.read_csv(Pfilename,sep=',', engine='python') # '\s+' regexp for whitespace
+dataP = dataP.fillna('') # empty cells become empty strings!
+ 
+#profile = pfr.ProfileReport(dataX, title='ES data Profiling Report')
+#profile.to_file(output_file="env_data.html")
+#quit()
+
+print('Data frame columns: Sensor Devices')
+print(list(dataS.columns.values))
+print('Data frame columns: Cell Phones')
+print(list(dataP.columns.values))
+
+#print('Unique Locations so far: ')
+Slocations = sorted(list(dataS.Location.unique()))
+print('Sensor Locations so far: ',len(Slocations))
+Plocations = sorted(list(dataP.Location.unique()))
+print('Cell Phone Locations so far: ',len(Plocations))
+for i in range(len(Plocations)):
+    print (i,Plocations[i],Slocations[i])
+B_locs = sorted(list(set(Slocations+Plocations)))
+print('combined location list:', len(B_locs))
+print(B_locs)
+setup_location_list(B_locs)
+#print(Slocations) 
+
+
+###############################
+#
+# Process command line (now that we know data characteristics)
+#
     
 if len(sys.argv) ==1:
     desloc = 1
@@ -71,7 +94,8 @@ elif len(sys.argv) == 3:
 print ('Starting up with location {} and unit: {}'.format(desloc, unit))
 
 #print(data.head)
-rename_tags(data)   # give the measurement types more compact names ('SPL', 'LUX')
+rename_tags(dataP)   # give the measurement types more compact names ('SPL', 'LUX')
+rename_tags(dataS)   # give the measurement types more compact names ('SPL', 'LUX')
 #print(data.head)
 
 locname = locations[desloc]  # convert from int to full string name
@@ -85,6 +109,7 @@ if True:
     l2 = input('Location selection: (integer):')
     l2 = int(l2)
     loc2=locations[l2]
+    data = select_InstPhone('Phone',dataP, dataS)
     rq.Difference(data, locname, loc2, unit)
 
 if False:
