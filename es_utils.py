@@ -14,6 +14,14 @@ locations = []
 
 units = ['SPL','LUX']
 
+
+def get_a_location():
+    print('Enter a location to compare with {}'.format(locname))
+    list_locations()
+    l2 = input('Location selection: (integer):')
+    l2 = int(l2)
+    return locations[l2]
+
 # print debugging info
 def print_deb(flag, string):
     if flag:
@@ -34,7 +42,7 @@ def print_help():
     A program to analyze data from the GIX MSTI T512 Environmental Sensing Lab.
     '''
     usage = '''
-    >es [location] [unit]
+    >python3 es.py [location] [unit]
         - location = integer code for measurement site
         - unit  =   "SPL" or "LUX" (no quotes)
     '''
