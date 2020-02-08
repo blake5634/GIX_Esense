@@ -1,0 +1,442 @@
+Timestamp,Your Phone,Your 4 digit ID,Quantity,Location,Measurement Value (db or lux)
+12/10/2019 9:12:16,Android (all models),5555,Light Flux,In class (on writing desk),845
+12/19/2019 8:56:39,Android (all models),5555,"Sound pressure level, SPL(dBA)",your bed at night,43
+1/14/2020 15:37:31,Android (all models),5555,"Sound pressure level, SPL(dBA)",GIX Woodshop: No machines (SPL only),52
+1/14/2020 18:38:35,Android (all models),8786,"Sound pressure level, SPL(dBA)",Starbucks at a table,60
+1/14/2020 18:40:36,Android (all models),5402,"Sound pressure level, SPL(dBA)",Starbucks at a table,60
+1/14/2020 18:49:33,iPhone (all models),6286,"Sound pressure level, SPL(dBA)",Starbucks at a table,77
+1/14/2020 21:32:59,Android (all models),5402,"Sound pressure level, SPL(dBA)",In class (on writing desk),43
+1/14/2020 21:36:42,Android (all models),8786,"Sound pressure level, SPL(dBA)",In class (on writing desk),30
+1/14/2020 21:50:06,Android (all models),8786,"Sound pressure level, SPL(dBA)",In the car,52
+1/14/2020 22:00:16,Android (all models),8786,"Sound pressure level, SPL(dBA)",your bed at night,26
+1/15/2020 2:05:51,Android (all models),5402,"Sound pressure level, SPL(dBA)",In the car,63
+1/15/2020 10:15:58,Android (all models),5402,"Sound pressure level, SPL(dBA)",your bed at night,48
+1/15/2020 15:29:22,Android (all models),8786,"Sound pressure level, SPL(dBA)",Outdoors by GIX: Cloudy,49
+1/15/2020 15:29:30,Android (all models),5402,"Sound pressure level, SPL(dBA)",Outdoors by GIX: Cloudy,63
+1/15/2020 16:15:42,Android (all models),8786,"Sound pressure level, SPL(dBA)","GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",77
+1/15/2020 16:16:03,Android (all models),5402,"Sound pressure level, SPL(dBA)","GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",72
+1/15/2020 16:17:56,Android (all models),8786,"Sound pressure level, SPL(dBA)","GIX Woodshop: Dust Collector  (SPL Only, measure from table saw operating pos.)",79
+1/15/2020 16:18:07,Android (all models),5402,"Sound pressure level, SPL(dBA)","GIX Woodshop: Dust Collector  (SPL Only, measure from table saw operating pos.)",72
+1/15/2020 16:19:43,Android (all models),8786,"Sound pressure level, SPL(dBA)",GIX Woodshop: Drill (SPL Only from omerating position),76
+1/15/2020 16:19:49,Android (all models),5402,"Sound pressure level, SPL(dBA)",GIX Woodshop: Drill (SPL Only from omerating position),62
+1/15/2020 16:20:15,Android (all models),5402,"Sound pressure level, SPL(dBA)",GIX Woodshop: No machines (SPL only),55
+1/15/2020 16:20:35,Android (all models),8786,"Sound pressure level, SPL(dBA)",GIX Woodshop: No machines (SPL only),39
+1/15/2020 17:36:06,Android (all models),8412,Light Flux,your bed at night,1
+1/15/2020 18:50:57,iPhone (all models),2733,Light Flux,breakfast table,404
+1/15/2020 18:51:19,iPhone (all models),2733,Light Flux,breakfast table,402
+1/15/2020 18:51:56,iPhone (all models),2733,Light Flux,breakfast table,400
+1/15/2020 18:54:19,iPhone (all models),2733,Light Flux,"GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",813
+1/15/2020 18:54:37,iPhone (all models),2733,Light Flux,"GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",850
+1/15/2020 18:54:52,iPhone (all models),2733,Light Flux,"GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",840
+1/15/2020 18:57:30,iPhone (all models),2733,Light Flux,In class (on writing desk),204
+1/15/2020 18:57:46,iPhone (all models),2733,Light Flux,In class (on writing desk),202
+1/15/2020 18:58:01,iPhone (all models),2733,Light Flux,In class (on writing desk),233
+1/16/2020 9:45:56,iPhone (all models),2733,Light Flux,your bed at night,145
+1/16/2020 9:46:11,iPhone (all models),2733,Light Flux,your bed at night,108
+1/16/2020 9:46:25,iPhone (all models),2733,Light Flux,your bed at night,137
+1/16/2020 11:20:38,Android (all models),5402,"Sound pressure level, SPL(dBA)",Outdoors by GIX: Sunny,56
+1/16/2020 11:21:10,Android (all models),8786,"Sound pressure level, SPL(dBA)",Outdoors by GIX: Sunny,52
+1/16/2020 14:45:11,Android (all models),8786,"Sound pressure level, SPL(dBA)",breakfast table,46
+1/16/2020 14:45:48,Android (all models),5402,"Sound pressure level, SPL(dBA)",breakfast table,46
+1/16/2020 14:51:42,iPhone (all models),6286,"Sound pressure level, SPL(dBA)",breakfast table,53.1
+1/16/2020 14:52:44,iPhone (all models),6286,"Sound pressure level, SPL(dBA)",In class (on writing desk),48.4
+1/16/2020 14:53:12,iPhone (all models),6286,"Sound pressure level, SPL(dBA)",Outdoors by GIX: Sunny,63.3
+1/16/2020 14:53:36,iPhone (all models),6286,"Sound pressure level, SPL(dBA)",GIX Woodshop: No machines (SPL only),46.7
+1/16/2020 14:53:55,iPhone (all models),6286,"Sound pressure level, SPL(dBA)","GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",92.8
+1/16/2020 14:54:18,iPhone (all models),6286,"Sound pressure level, SPL(dBA)","GIX Woodshop: Dust Collector  (SPL Only, measure from table saw operating pos.)",86.6
+1/16/2020 14:54:36,iPhone (all models),6286,"Sound pressure level, SPL(dBA)",GIX Woodshop: Drill (SPL Only from omerating position),70.3
+1/16/2020 14:55:59,iPhone (all models),6286,"Sound pressure level, SPL(dBA)",your bed at night,44.1
+1/16/2020 16:10:32,Android (all models),6046,"Sound pressure level, SPL(dBA)",In class (on writing desk),45.3
+1/16/2020 16:11:37,iPhone (all models),0520,"Sound pressure level, SPL(dBA)",In class (on writing desk),47
+1/16/2020 16:12:40,Android (all models),6046,"Sound pressure level, SPL(dBA)",Outdoors by GIX: Sunny,37.7
+1/16/2020 16:13:28,iPhone (all models),0520,"Sound pressure level, SPL(dBA)",Outdoors by GIX: Cloudy,48
+1/16/2020 16:17:25,Android (all models),6046,"Sound pressure level, SPL(dBA)",GIX Woodshop: No machines (SPL only),35.2
+1/16/2020 16:19:32,iPhone (all models),0520,"Sound pressure level, SPL(dBA)",GIX Woodshop: No machines (SPL only),43
+1/16/2020 16:19:52,Android (all models),6046,"Sound pressure level, SPL(dBA)",GIX Woodshop: No machines (SPL only),35.1
+1/16/2020 16:20:57,iPhone (all models),0520,"Sound pressure level, SPL(dBA)","GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",86
+1/16/2020 16:21:21,Android (all models),6046,"Sound pressure level, SPL(dBA)","GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",72.2
+1/16/2020 16:24:13,iPhone (all models),520,"Sound pressure level, SPL(dBA)","GIX Woodshop: Dust Collector  (SPL Only, measure from table saw operating pos.)",83
+1/16/2020 16:24:25,Android (all models),6046,"Sound pressure level, SPL(dBA)","GIX Woodshop: Dust Collector  (SPL Only, measure from table saw operating pos.)",72.4
+1/16/2020 16:25:12,iPhone (all models),0520,"Sound pressure level, SPL(dBA)",GIX Woodshop: Drill (SPL Only from omerating position),70
+1/16/2020 16:25:30,Android (all models),6046,"Sound pressure level, SPL(dBA)",GIX Woodshop: Drill (SPL Only from omerating position),58.8
+1/16/2020 16:32:11,iPhone (all models),0520,"Sound pressure level, SPL(dBA)",breakfast table,44
+1/16/2020 16:32:33,Android (all models),6046,"Sound pressure level, SPL(dBA)",breakfast table,43.8
+1/16/2020 16:37:51,Android (all models),6046,"Sound pressure level, SPL(dBA)",In the car,43.3
+1/16/2020 16:38:16,iPhone (all models),0520,"Sound pressure level, SPL(dBA)",In the car,33
+1/16/2020 16:42:40,iPhone (all models),0520,"Sound pressure level, SPL(dBA)",your bed at night,0520
+1/16/2020 16:42:46,Android (all models),6046,"Sound pressure level, SPL(dBA)",your bed at night,34.3
+1/16/2020 16:43:56,iPhone (all models),0520,"Sound pressure level, SPL(dBA)",breakfast table,30
+1/16/2020 16:44:03,Android (all models),6046,"Sound pressure level, SPL(dBA)",breakfast table,26.1
+1/16/2020 16:52:56,iPhone (all models),5103,"Sound pressure level, SPL(dBA)",GIX Woodshop: No machines (SPL only),46.1
+1/16/2020 16:54:04,Android (all models),6046,"Sound pressure level, SPL(dBA)",Starbucks at a table,56.1
+1/16/2020 16:54:05,iPhone (all models),5103,"Sound pressure level, SPL(dBA)","GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",92.1
+1/16/2020 16:54:25,iPhone (all models),0520,"Sound pressure level, SPL(dBA)",Starbucks at a table,75
+1/16/2020 16:54:31,iPhone (all models),5103,"Sound pressure level, SPL(dBA)","GIX Woodshop: Dust Collector  (SPL Only, measure from table saw operating pos.)",83.4
+1/16/2020 16:54:49,iPhone (all models),5103,"Sound pressure level, SPL(dBA)",GIX Woodshop: Drill (SPL Only from omerating position),72.6
+1/20/2020 10:11:17,iPhone (all models),1735,"Sound pressure level, SPL(dBA)",your bed at night,30.3
+1/20/2020 12:31:14,iPhone (all models),1037,Light Flux,breakfast table,230
+1/20/2020 12:31:34,iPhone (all models),1037,Light Flux,Starbucks at a table,87
+1/20/2020 12:32:02,iPhone (all models),1037,Light Flux,In class (on writing desk),228
+1/20/2020 12:32:21,iPhone (all models),1037,Light Flux,Outdoors by GIX: Cloudy,2898
+1/20/2020 12:32:38,iPhone (all models),1037,Light Flux,In the car,670
+1/20/2020 12:32:53,iPhone (all models),1037,Light Flux,On a bus (while bus is stopped),413
+1/20/2020 12:33:16,iPhone (all models),1037,Light Flux,On a bus (Highway speed),418
+1/20/2020 12:35:01,iPhone (all models),1037,Light Flux,"GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",279
+1/20/2020 14:02:16,Android (all models),8268,Light Flux,breakfast table,3
+1/20/2020 14:06:29,Android (all models),8268,"Sound pressure level, SPL(dBA)",breakfast table,28
+1/20/2020 15:31:50,iPhone (all models),0987,"Sound pressure level, SPL(dBA)",In the car,45
+1/20/2020 15:41:01,iPhone (all models),0987,"Sound pressure level, SPL(dBA)",Outdoors by GIX: Cloudy,49.3
+1/20/2020 15:43:04,iPhone (all models),0987,"Sound pressure level, SPL(dBA)",In class (on writing desk),46
+1/20/2020 15:53:49,iPhone (all models),0987,"Sound pressure level, SPL(dBA)",GIX Woodshop: No machines (SPL only),45.3
+1/20/2020 15:56:00,iPhone (all models),0987,"Sound pressure level, SPL(dBA)","GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",91.6
+1/20/2020 15:57:09,iPhone (all models),0987,"Sound pressure level, SPL(dBA)",GIX Woodshop: Drill (SPL Only from omerating position),85.7
+1/20/2020 16:00:34,iPhone (all models),0987,"Sound pressure level, SPL(dBA)","GIX Woodshop: Dust Collector  (SPL Only, measure from table saw operating pos.)",84.6
+1/20/2020 23:52:56,Android (all models),5402,Light Flux,your bed at night,4
+1/20/2020 23:53:07,Android (all models),5402,Light Flux,your bed at night,6
+1/20/2020 23:53:17,Android (all models),5402,Light Flux,your bed at night,10
+1/21/2020 0:02:15,Android (all models),8786,Light Flux,your bed at night,6
+1/21/2020 0:02:42,Android (all models),8786,Light Flux,your bed at night,1
+1/21/2020 0:03:08,Android (all models),8786,Light Flux,your bed at night,1
+1/21/2020 1:44:01,Android (all models),8268,"Sound pressure level, SPL(dBA)",your bed at night,10
+1/21/2020 3:25:10,iPhone (all models),0987,"Sound pressure level, SPL(dBA)",your bed at night,26.7
+1/21/2020 4:46:25,Android (all models),6310,Light Flux,your bed at night,5
+1/21/2020 4:46:46,Android (all models),6310,Light Flux,breakfast table,220
+1/21/2020 4:47:49,Android (all models),6310,Light Flux,Starbucks at a table,312
+1/21/2020 4:48:12,Android (all models),6310,Light Flux,In class (on writing desk),167
+1/21/2020 4:48:24,Android (all models),6310,Light Flux,Outdoors by GIX: Sunny,334
+1/21/2020 4:48:38,Android (all models),6310,Light Flux,Outdoors by GIX: Cloudy,155
+1/21/2020 4:48:55,Android (all models),6310,Light Flux,In the car,15
+1/21/2020 4:49:15,Android (all models),6310,Light Flux,"GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",201
+1/21/2020 10:11:00,Android (all models),8268,"Sound pressure level, SPL(dBA)",Starbucks at a table,46
+1/21/2020 10:11:54,Android (all models),8268,Light Flux,Starbucks at a table,461
+1/21/2020 10:13:12,Android (all models),8268,"Sound pressure level, SPL(dBA)",In class (on writing desk),35
+1/21/2020 10:14:18,Android (all models),8268,Light Flux,In class (on writing desk),701
+1/21/2020 10:16:13,Android (all models),8268,"Sound pressure level, SPL(dBA)",Outdoors by GIX: Cloudy,29
+1/21/2020 10:17:26,Android (all models),8268,Light Flux,Outdoors by GIX: Cloudy,4639
+1/21/2020 10:19:14,Android (all models),8268,"Sound pressure level, SPL(dBA)",In the car,50
+1/21/2020 10:21:05,Android (all models),8268,Light Flux,On a bus (while bus is stopped),69
+1/21/2020 10:22:39,Android (all models),8268,Light Flux,On a bus (Highway speed),29
+1/21/2020 10:40:06,iPhone (all models),0987,"Sound pressure level, SPL(dBA)",breakfast table,33.7
+1/21/2020 12:40:07,Android (all models),8268,"Sound pressure level, SPL(dBA)",GIX Woodshop: No machines (SPL only),22
+1/21/2020 12:41:08,Android (all models),8268,"Sound pressure level, SPL(dBA)","GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",61
+1/21/2020 12:42:12,Android (all models),8268,Light Flux,"GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",564
+1/21/2020 12:43:06,Android (all models),8268,"Sound pressure level, SPL(dBA)","GIX Woodshop: Dust Collector  (SPL Only, measure from table saw operating pos.)",58
+1/21/2020 12:43:50,Android (all models),8268,"Sound pressure level, SPL(dBA)",GIX Woodshop: Drill (SPL Only from omerating position),47
+1/21/2020 13:08:59,Android (all models),8786,Light Flux,In the car,622
+1/21/2020 13:09:21,Android (all models),8786,Light Flux,In the car,694
+1/21/2020 13:09:40,Android (all models),8786,Light Flux,In the car,698
+1/21/2020 13:10:52,Android (all models),5402,Light Flux,In the car,2285
+1/21/2020 13:11:12,Android (all models),8786,Light Flux,"GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",290
+1/21/2020 13:11:13,Android (all models),5402,Light Flux,In the car,2330
+1/21/2020 13:11:25,Android (all models),8786,Light Flux,"GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",440
+1/21/2020 13:11:32,Android (all models),5402,Light Flux,In the car,2190
+1/21/2020 13:11:39,Android (all models),8786,Light Flux,"GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",198
+1/21/2020 13:12:02,Android (all models),5402,Light Flux,"GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",519
+1/21/2020 13:12:16,Android (all models),5402,Light Flux,"GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",448
+1/21/2020 13:12:29,Android (all models),5402,Light Flux,"GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",265
+1/21/2020 14:03:37,iPhone (all models),1735,"Sound pressure level, SPL(dBA)",Outdoors by GIX: Cloudy,62.2
+1/21/2020 14:04:31,iPhone (all models),1735,"Sound pressure level, SPL(dBA)",Starbucks at a table,63.5
+1/21/2020 14:04:56,iPhone (all models),1735,"Sound pressure level, SPL(dBA)",In class (on writing desk),55.6
+1/21/2020 18:27:12,iPhone (all models),5103,"Sound pressure level, SPL(dBA)",Outdoors by GIX: Cloudy,62.5
+1/21/2020 18:28:04,iPhone (all models),5103,"Sound pressure level, SPL(dBA)",On a bus (Highway speed),74.8
+1/21/2020 18:28:26,iPhone (all models),5103,"Sound pressure level, SPL(dBA)",On a bus (while bus is stopped),69.6
+1/21/2020 18:30:49,iPhone (all models),5103,"Sound pressure level, SPL(dBA)",In the car,71.9
+1/21/2020 18:31:12,iPhone (all models),5103,"Sound pressure level, SPL(dBA)",your bed at night,30.8
+1/21/2020 18:32:18,iPhone (all models),5103,"Sound pressure level, SPL(dBA)",Outdoors by GIX: Sunny,49.1
+1/21/2020 18:32:48,iPhone (all models),5103,"Sound pressure level, SPL(dBA)",Outdoors by GIX: Sunny,65.9
+1/21/2020 18:33:41,iPhone (all models),5103,"Sound pressure level, SPL(dBA)",breakfast table,39.4
+1/21/2020 20:30:56,iPhone (all models),9848,"Sound pressure level, SPL(dBA)",your bed at night,32.7
+1/22/2020 5:18:50,Android (all models),6520,"Sound pressure level, SPL(dBA)",your bed at night,44.4
+1/22/2020 5:33:19,Android (all models),6520,"Sound pressure level, SPL(dBA)",Outdoors by GIX: Cloudy,33.2
+1/22/2020 7:36:18,Android (all models),6520,"Sound pressure level, SPL(dBA)",On a bus (while bus is stopped),48.5
+1/22/2020 7:37:32,Android (all models),6520,"Sound pressure level, SPL(dBA)",On a bus (Highway speed),71.6
+1/22/2020 8:20:06,Android (all models),6520,"Sound pressure level, SPL(dBA)","GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",72.2
+1/22/2020 8:21:29,Android (all models),6520,"Sound pressure level, SPL(dBA)","GIX Woodshop: Dust Collector  (SPL Only, measure from table saw operating pos.)",78
+1/22/2020 8:22:59,Android (all models),6520,"Sound pressure level, SPL(dBA)",GIX Woodshop: Drill (SPL Only from omerating position),66.5
+1/22/2020 10:35:27,iPhone (all models),9848,"Sound pressure level, SPL(dBA)",breakfast table,69
+1/22/2020 10:46:30,iPhone (all models),9848,"Sound pressure level, SPL(dBA)",Outdoors by GIX: Cloudy,56.1
+1/22/2020 11:07:46,iPhone (all models),9849,"Sound pressure level, SPL(dBA)",In class (on writing desk),65.8
+1/22/2020 14:12:25,iPhone (all models),6818,"Sound pressure level, SPL(dBA)",In class (on writing desk),56.7
+1/22/2020 15:37:33,iPhone (all models),5247,"Sound pressure level, SPL(dBA)",In class (on writing desk),60.2
+1/22/2020 15:53:52,iPhone (all models),9848,"Sound pressure level, SPL(dBA)",GIX Woodshop: No machines (SPL only),49.9
+1/22/2020 15:56:36,iPhone (all models),9848,"Sound pressure level, SPL(dBA)","GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",81.4
+1/22/2020 15:57:47,iPhone (all models),9848,"Sound pressure level, SPL(dBA)","GIX Woodshop: Dust Collector  (SPL Only, measure from table saw operating pos.)",75.4
+1/22/2020 15:58:14,iPhone (all models),9848,"Sound pressure level, SPL(dBA)",GIX Woodshop: Drill (SPL Only from omerating position),68.1
+1/22/2020 16:01:34,iPhone (all models),6818,"Sound pressure level, SPL(dBA)",GIX Woodshop: No machines (SPL only),50.6
+1/22/2020 16:01:51,iPhone (all models),6818,"Sound pressure level, SPL(dBA)","GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",85
+1/22/2020 16:02:12,iPhone (all models),6818,"Sound pressure level, SPL(dBA)","GIX Woodshop: Dust Collector  (SPL Only, measure from table saw operating pos.)",84.1
+1/22/2020 16:02:29,iPhone (all models),6818,"Sound pressure level, SPL(dBA)",GIX Woodshop: Drill (SPL Only from omerating position),71.6
+1/22/2020 16:02:41,iPhone (all models),5247,"Sound pressure level, SPL(dBA)",GIX Woodshop: No machines (SPL only),50.6
+1/22/2020 16:03:01,iPhone (all models),5247,"Sound pressure level, SPL(dBA)","GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",81.3
+1/22/2020 16:03:16,iPhone (all models),5247,"Sound pressure level, SPL(dBA)","GIX Woodshop: Dust Collector  (SPL Only, measure from table saw operating pos.)",83.5
+1/22/2020 16:03:28,iPhone (all models),5247,"Sound pressure level, SPL(dBA)",GIX Woodshop: Drill (SPL Only from omerating position),70.7
+1/22/2020 17:11:06,Android (all models),6046,Light Flux,In class (on writing desk),846
+1/22/2020 19:35:12,iPhone (all models),6818,"Sound pressure level, SPL(dBA)",Outdoors by GIX: Cloudy,56.9
+1/22/2020 23:12:50,iPhone (all models),1037,Light Flux,your bed at night,1
+1/23/2020 3:41:23,iPhone (all models),0987,Light Flux,your bed at night,1.3
+1/23/2020 7:37:01,Android (all models),6520,"Sound pressure level, SPL(dBA)",Starbucks at a table,62.3
+1/23/2020 9:35:43,iPhone (all models),9848,"Sound pressure level, SPL(dBA)",On a bus (while bus is stopped),58
+1/23/2020 9:36:08,iPhone (all models),9848,"Sound pressure level, SPL(dBA)",On a bus (Highway speed),68
+1/23/2020 9:50:54,Android (all models),6520,"Sound pressure level, SPL(dBA)",In class (on writing desk),49.4
+1/23/2020 10:32:45,iPhone (all models),0987,Light Flux,breakfast table,70
+1/23/2020 10:48:28,iPhone (all models),5103,"Sound pressure level, SPL(dBA)",In class (on writing desk),50.5
+1/23/2020 11:08:49,iPhone (all models),0987,Light Flux,In class (on writing desk),231
+1/23/2020 11:15:07,iPhone (all models),0987,Light Flux,Outdoors by GIX: Cloudy,256
+1/23/2020 11:28:53,iPhone (all models),5247,"Sound pressure level, SPL(dBA)",your bed at night,31.7
+1/23/2020 11:29:29,iPhone (all models),5247,"Sound pressure level, SPL(dBA)",your bed at night,31.7
+1/23/2020 11:29:46,iPhone (all models),5247,"Sound pressure level, SPL(dBA)",breakfast table,38
+1/23/2020 13:23:39,iPhone (all models),5247,"Sound pressure level, SPL(dBA)",Starbucks at a table,69.5
+1/23/2020 13:25:08,Android (all models),6046,Light Flux,your bed at night,3
+1/23/2020 13:25:42,iPhone (all models),5247,"Sound pressure level, SPL(dBA)",In the car,61.8
+1/23/2020 13:26:33,Android (all models),6046,Light Flux,breakfast table,328
+1/23/2020 13:26:51,iPhone (all models),5247,"Sound pressure level, SPL(dBA)",Outdoors by GIX: Cloudy,59.8
+1/23/2020 13:28:37,Android (all models),6046,Light Flux,Outdoors by GIX: Cloudy,2232
+1/23/2020 13:30:14,Android (all models),6046,Light Flux,In the car,29
+1/23/2020 14:16:43,iPhone (all models),0987,Light Flux,GIX Woodshop: No machines (SPL only),280
+1/23/2020 14:16:58,iPhone (all models),0987,Light Flux,"GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",280
+1/23/2020 14:17:15,iPhone (all models),0987,Light Flux,"GIX Woodshop: Dust Collector  (SPL Only, measure from table saw operating pos.)",280
+1/23/2020 14:17:49,iPhone (all models),0987,Light Flux,GIX Woodshop: Drill (SPL Only from omerating position),280
+1/23/2020 15:07:53,iPhone (all models),0520,Light Flux,In class (on writing desk),215
+1/23/2020 15:09:45,iPhone (all models),0520,Light Flux,Outdoors by GIX: Cloudy,486
+1/23/2020 15:10:27,iPhone (all models),0520,Light Flux,Starbucks at a table,62
+1/23/2020 15:11:07,iPhone (all models),0520,Light Flux,your bed at night,10
+1/23/2020 15:12:47,iPhone (all models),0520,Light Flux,"GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",228
+1/23/2020 15:13:04,Android (all models),6046,Light Flux,"GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",179
+1/23/2020 15:14:05,iPhone (all models),0520,Light Flux,In the car,20
+1/23/2020 15:14:50,iPhone (all models),0520,Light Flux,breakfast table,99
+1/23/2020 23:02:55,iPhone (all models),9848,Light Flux,your bed at night,6
+1/27/2020 5:22:34,Android (all models),6520,Light Flux,your bed at night,1
+1/27/2020 5:23:07,Android (all models),6520,Light Flux,your bed at night,1
+1/27/2020 5:23:31,Android (all models),6520,Light Flux,your bed at night,2
+1/27/2020 5:35:13,Android (all models),6520,Light Flux,breakfast table,3
+1/27/2020 5:35:28,Android (all models),6520,Light Flux,breakfast table,12
+1/27/2020 5:35:45,Android (all models),6520,Light Flux,breakfast table,6520
+1/27/2020 7:38:13,Android (all models),6520,Light Flux,In the car,7
+1/27/2020 7:38:33,Android (all models),6520,Light Flux,In the car,6
+1/27/2020 7:42:25,Android (all models),6540,Light Flux,In class (on writing desk),715
+1/27/2020 7:42:41,Android (all models),6520,Light Flux,In class (on writing desk),667
+1/27/2020 7:43:08,Android (all models),6520,Light Flux,In class (on writing desk),582
+1/27/2020 7:48:00,Android (all models),6520,Light Flux,"GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",495
+1/27/2020 7:48:21,Android (all models),6520,Light Flux,"GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",491
+1/27/2020 12:14:03,Android (all models),9160,"Sound pressure level, SPL(dBA)",Outdoors by GIX: Sunny,76
+1/27/2020 12:16:00,Android (all models),9160,"Sound pressure level, SPL(dBA)",Starbucks at a table,70
+1/27/2020 12:16:07,iPhone (all models),9848,Light Flux,In class (on writing desk),201
+1/27/2020 12:30:18,iPhone (all models),9848,Light Flux,Outdoors by GIX: Cloudy,492
+1/27/2020 20:40:14,Android (all models),8268,Light Flux,your bed at night,0.1
+1/27/2020 22:33:40,iPhone (all models),9848,Light Flux,Starbucks at a table,173
+1/27/2020 22:35:58,iPhone (all models),9848,Light Flux,your bed at night,1
+1/27/2020 22:43:21,iPhone (all models),5247,Light Flux,Starbucks at a table,70
+1/27/2020 22:44:08,iPhone (all models),5247,Light Flux,your bed at night,1
+1/28/2020 6:16:43,Android (all models),6520,Light Flux,Starbucks at a table,84
+1/28/2020 6:17:11,Android (all models),6520,Light Flux,Starbucks at a table,18
+1/28/2020 6:17:28,Android (all models),6520,Light Flux,Starbucks at a table,19
+1/28/2020 8:52:01,Android (all models),6520,Light Flux,Outdoors by GIX: Cloudy,2149
+1/28/2020 8:52:21,Android (all models),6520,Light Flux,Outdoors by GIX: Cloudy,2259
+1/28/2020 8:52:35,Android (all models),6520,Light Flux,Outdoors by GIX: Cloudy,1978
+1/28/2020 9:44:23,iPhone (all models),9848,Light Flux,breakfast table,109
+1/28/2020 9:45:43,iPhone (all models),9848,Light Flux,In the car,28
+1/28/2020 12:59:23,iPhone (all models),9848,Light Flux,Outdoors by GIX: Sunny,2770
+1/28/2020 13:04:40,iPhone (all models),5247,Light Flux,breakfast table,175
+1/28/2020 13:06:20,iPhone (all models),5247,Light Flux,In class (on writing desk),205
+1/28/2020 13:06:48,iPhone (all models),5247,Light Flux,In class (on writing desk),205
+1/28/2020 13:48:49,Android (all models),5103,Light Flux,"GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",557
+1/28/2020 13:49:12,Android (all models),5103,Light Flux,In class (on writing desk),349
+1/28/2020 14:12:27,iPhone (all models),5247,Light Flux,Outdoors by GIX: Cloudy,1266
+1/28/2020 17:30:34,iPhone (all models),2446,"Sound pressure level, SPL(dBA)",Outdoors by GIX: Sunny,57.6
+1/28/2020 17:33:10,iPhone (all models),2446,"Sound pressure level, SPL(dBA)",your bed at night,40.4
+1/28/2020 17:34:07,iPhone (all models),5247,Light Flux,"GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",228
+1/28/2020 17:34:31,iPhone (all models),2446,"Sound pressure level, SPL(dBA)",Starbucks at a table,43.2
+1/28/2020 17:35:24,iPhone (all models),2446,"Sound pressure level, SPL(dBA)",In class (on writing desk),60.2
+1/28/2020 17:36:26,iPhone (all models),2446,"Sound pressure level, SPL(dBA)",In the car,58.7
+1/28/2020 17:37:22,iPhone (all models),2446,"Sound pressure level, SPL(dBA)",GIX Woodshop: No machines (SPL only),88.6
+1/28/2020 17:40:00,iPhone (all models),2446,"Sound pressure level, SPL(dBA)","GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",106.9
+1/28/2020 17:43:41,iPhone (all models),2446,"Sound pressure level, SPL(dBA)","GIX Woodshop: Dust Collector  (SPL Only, measure from table saw operating pos.)",108.7
+1/28/2020 17:44:29,iPhone (all models),2446,"Sound pressure level, SPL(dBA)",GIX Woodshop: Drill (SPL Only from omerating position),113.2
+1/28/2020 21:02:04,Android (all models),4705,"Sound pressure level, SPL(dBA)",breakfast table,54
+1/28/2020 21:02:35,Android (all models),4705,"Sound pressure level, SPL(dBA)",Starbucks at a table,53
+1/28/2020 21:03:11,Android (all models),4705,"Sound pressure level, SPL(dBA)",Outdoors by GIX: Cloudy,55
+1/28/2020 22:46:36,Android (all models),4705,Light Flux,your bed at night,4
+1/28/2020 22:46:49,Android (all models),4705,Light Flux,your bed at night,5
+1/28/2020 22:47:02,Android (all models),4705,Light Flux,your bed at night,5
+1/28/2020 22:49:45,Android (all models),4705,"Sound pressure level, SPL(dBA)",your bed at night,30
+1/28/2020 23:30:27,Android (all models),3171,"Sound pressure level, SPL(dBA)",your bed at night,19
+1/29/2020 13:34:14,iPhone (all models),1735,Light Flux,breakfast table,48
+1/29/2020 13:34:37,iPhone (all models),1735,Light Flux,In class (on writing desk),301
+1/29/2020 13:34:58,iPhone (all models),1735,Light Flux,On a bus (Highway speed),256
+1/29/2020 14:02:15,Android (all models),1918,"Sound pressure level, SPL(dBA)",your bed at night,33
+1/29/2020 14:02:53,Android (all models),1918,"Sound pressure level, SPL(dBA)",In class (on writing desk),55
+1/29/2020 14:08:08,Android (all models),3171,"Sound pressure level, SPL(dBA)",In class (on writing desk),54
+1/29/2020 14:11:54,Android (all models),3171,"Sound pressure level, SPL(dBA)",Outdoors by GIX: Cloudy,67
+1/29/2020 14:12:08,iPhone (all models),4264,"Sound pressure level, SPL(dBA)",In class (on writing desk),58
+1/29/2020 14:13:39,Android (all models),1918,"Sound pressure level, SPL(dBA)",Outdoors by GIX: Cloudy,63
+1/29/2020 15:03:10,iPhone (all models),4264,"Sound pressure level, SPL(dBA)",In the car,40.7
+1/29/2020 15:39:18,Android (all models),4705,Light Flux,In class (on writing desk),439
+1/29/2020 15:39:35,Android (all models),4705,Light Flux,In class (on writing desk),308
+1/29/2020 15:39:50,Android (all models),4705,Light Flux,In class (on writing desk),426
+1/29/2020 19:56:34,iPhone (all models),4264,"Sound pressure level, SPL(dBA)",your bed at night,35.1
+1/29/2020 20:50:50,Android (all models),4705,Light Flux,In the car,0
+1/29/2020 20:51:03,Android (all models),4705,Light Flux,In the car,0
+1/29/2020 20:51:23,Android (all models),4705,Light Flux,In the car,2
+1/29/2020 22:42:16,iPhone (all models),4264,"Sound pressure level, SPL(dBA)",Starbucks at a table,70.3
+1/30/2020 9:43:37,Android (all models),3171,"Sound pressure level, SPL(dBA)",In the car,71
+1/30/2020 11:37:16,Android (all models),8500,"Sound pressure level, SPL(dBA)",your bed at night,43.2
+1/30/2020 11:37:27,Android (all models),8500,"Sound pressure level, SPL(dBA)",breakfast table,50.6
+1/30/2020 11:37:38,Android (all models),8500,"Sound pressure level, SPL(dBA)",Starbucks at a table,45
+1/30/2020 11:37:51,Android (all models),8500,Light Flux,Starbucks at a table,45
+1/30/2020 11:38:14,Android (all models),8500,"Sound pressure level, SPL(dBA)",In class (on writing desk),48.3
+1/30/2020 11:38:34,Android (all models),8500,"Sound pressure level, SPL(dBA)",Outdoors by GIX: Cloudy,56.5
+1/30/2020 11:38:58,Android (all models),8500,"Sound pressure level, SPL(dBA)",In the car,61.3
+1/30/2020 11:39:16,Android (all models),8500,"Sound pressure level, SPL(dBA)","GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",66.8
+1/30/2020 11:39:33,Android (all models),8500,"Sound pressure level, SPL(dBA)","GIX Woodshop: Dust Collector  (SPL Only, measure from table saw operating pos.)",69.3
+1/30/2020 11:39:52,Android (all models),8500,"Sound pressure level, SPL(dBA)",GIX Woodshop: Drill (SPL Only from omerating position),63.4
+1/30/2020 13:06:11,Android (all models),3171,Light Flux,In class (on writing desk),79
+1/30/2020 13:11:33,Android (all models),3171,"Sound pressure level, SPL(dBA)",GIX Woodshop: Drill (SPL Only from omerating position),73.4
+1/30/2020 13:12:26,Android (all models),3171,"Sound pressure level, SPL(dBA)","GIX Woodshop: Dust Collector  (SPL Only, measure from table saw operating pos.)",82.6
+1/30/2020 13:14:02,Android (all models),3171,"Sound pressure level, SPL(dBA)","GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",93.4
+1/30/2020 13:18:14,Android (all models),3171,"Sound pressure level, SPL(dBA)",GIX Woodshop: No machines (SPL only),45.9
+1/30/2020 14:10:13,Android (all models),3171,"Sound pressure level, SPL(dBA)",GIX Woodshop: No machines (SPL only),45.9
+1/30/2020 14:10:33,Android (all models),3171,Light Flux,In the car,1.3
+1/30/2020 15:34:50,Android (all models),4705,Light Flux,Outdoors by GIX: Cloudy,1309
+1/30/2020 15:35:04,Android (all models),4705,Light Flux,Outdoors by GIX: Cloudy,1184
+1/30/2020 15:35:19,Android (all models),4705,Light Flux,Outdoors by GIX: Cloudy,1179
+1/30/2020 20:37:49,Android (all models),4705,Light Flux,Starbucks at a table,19
+1/30/2020 20:40:22,Android (all models),4705,Light Flux,Starbucks at a table,18
+1/30/2020 20:40:37,Android (all models),4705,Light Flux,Starbucks at a table,65
+1/30/2020 20:40:51,Android (all models),4705,Light Flux,Starbucks at a table,96
+1/30/2020 20:41:04,Android (all models),4705,Light Flux,breakfast table,22
+1/30/2020 20:41:29,Android (all models),4705,Light Flux,breakfast table,18
+1/30/2020 20:42:03,Android (all models),4705,Light Flux,breakfast table,19
+1/30/2020 23:22:20,Android (all models),5564,Light Flux,your bed at night,0.1
+1/30/2020 23:22:53,Android (all models),5564,Light Flux,breakfast table,56
+1/30/2020 23:23:19,Android (all models),5564,Light Flux,Starbucks at a table,651
+1/30/2020 23:23:36,Android (all models),5564,Light Flux,In class (on writing desk),538
+1/30/2020 23:24:11,Android (all models),5564,Light Flux,Outdoors by GIX: Cloudy,13650
+1/30/2020 23:24:31,Android (all models),5564,Light Flux,In the car,242
+1/30/2020 23:24:51,Android (all models),5564,Light Flux,On a bus (while bus is stopped),160
+1/30/2020 23:25:13,Android (all models),5564,Light Flux,On a bus (Highway speed),155
+1/30/2020 23:25:41,Android (all models),5564,Light Flux,"GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",671
+1/30/2020 23:26:17,Android (all models),5564,Light Flux,Outdoors by GIX: Sunny,13650
+1/30/2020 23:33:02,Android (all models),5564,"Sound pressure level, SPL(dBA)",your bed at night,41
+1/30/2020 23:33:21,Android (all models),5564,"Sound pressure level, SPL(dBA)",breakfast table,62
+1/30/2020 23:33:47,Android (all models),5564,"Sound pressure level, SPL(dBA)",Starbucks at a table,76
+1/30/2020 23:34:07,Android (all models),5564,"Sound pressure level, SPL(dBA)",In class (on writing desk),66
+1/30/2020 23:34:34,Android (all models),5564,"Sound pressure level, SPL(dBA)",Outdoors by GIX: Sunny,74
+1/30/2020 23:34:50,Android (all models),5564,"Sound pressure level, SPL(dBA)",Outdoors by GIX: Cloudy,77
+1/30/2020 23:35:07,Android (all models),5564,"Sound pressure level, SPL(dBA)",In the car,64
+1/30/2020 23:35:27,Android (all models),5564,"Sound pressure level, SPL(dBA)",On a bus (while bus is stopped),65
+1/30/2020 23:35:46,Android (all models),5564,"Sound pressure level, SPL(dBA)",On a bus (Highway speed),74
+1/30/2020 23:36:07,Android (all models),5564,"Sound pressure level, SPL(dBA)",GIX Woodshop: No machines (SPL only),54
+1/30/2020 23:36:24,Android (all models),5564,"Sound pressure level, SPL(dBA)","GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",78
+1/30/2020 23:36:44,Android (all models),5564,"Sound pressure level, SPL(dBA)","GIX Woodshop: Dust Collector  (SPL Only, measure from table saw operating pos.)",93
+1/30/2020 23:37:01,Android (all models),5564,"Sound pressure level, SPL(dBA)",GIX Woodshop: Drill (SPL Only from omerating position),73
+1/31/2020 0:11:19,Android (all models),3171,Light Flux,your bed at night,0.1
+1/31/2020 10:18:07,iPhone (all models),0106,"Sound pressure level, SPL(dBA)",your bed at night,30.4
+1/31/2020 10:41:32,iPhone (all models),0106,"Sound pressure level, SPL(dBA)",Outdoors by GIX: Cloudy,57.6
+2/1/2020 7:39:40,Android (all models),3171,Light Flux,breakfast table,62.3
+2/1/2020 13:40:51,iPhone (all models),0106,"Sound pressure level, SPL(dBA)",On a bus (while bus is stopped),70.3
+2/1/2020 13:43:47,iPhone (all models),0106,"Sound pressure level, SPL(dBA)",On a bus (Highway speed),76
+2/1/2020 14:21:07,iPhone (all models),0106,"Sound pressure level, SPL(dBA)","GIX Woodshop: Dust Collector  (SPL Only, measure from table saw operating pos.)",80
+2/1/2020 14:24:45,iPhone (all models),0106,"Sound pressure level, SPL(dBA)","GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",81.6
+2/1/2020 14:27:17,iPhone (all models),0106,"Sound pressure level, SPL(dBA)",GIX Woodshop: Drill (SPL Only from omerating position),74.6
+2/2/2020 23:39:29,iPhone (all models),8057,"Sound pressure level, SPL(dBA)",your bed at night,33.1
+2/3/2020 9:39:16,iPhone (all models),8057,"Sound pressure level, SPL(dBA)",In class (on writing desk),55
+2/3/2020 9:41:55,iPhone (all models),1613,"Sound pressure level, SPL(dBA)",In class (on writing desk),57.6
+2/3/2020 9:46:19,iPhone (all models),1613,Light Flux,In class (on writing desk),142
+2/3/2020 12:18:45,iPhone (all models),1613,Light Flux,Outdoors by GIX: Cloudy,2053
+2/3/2020 12:22:32,iPhone (all models),1613,"Sound pressure level, SPL(dBA)",Outdoors by GIX: Cloudy,76.9
+2/3/2020 12:38:01,iPhone (all models),1613,"Sound pressure level, SPL(dBA)",GIX Woodshop: No machines (SPL only),49.4
+2/3/2020 12:39:30,iPhone (all models),1613,"Sound pressure level, SPL(dBA)","GIX Woodshop: Dust Collector  (SPL Only, measure from table saw operating pos.)",89.6
+2/3/2020 12:46:56,iPhone (all models),1613,"Sound pressure level, SPL(dBA)","GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",79.7
+2/3/2020 12:49:10,iPhone (all models),1613,"Sound pressure level, SPL(dBA)",GIX Woodshop: Drill (SPL Only from omerating position),90
+2/3/2020 12:52:09,iPhone (all models),1613,Light Flux,"GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",227
+2/3/2020 13:05:39,Android (all models),3171,Light Flux,Outdoors by GIX: Cloudy,587
+2/3/2020 13:45:47,Android (all models),4705,Light Flux,"GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",331
+2/3/2020 13:46:06,Android (all models),4705,"Sound pressure level, SPL(dBA)",GIX Woodshop: Drill (SPL Only from omerating position),65
+2/3/2020 13:46:37,Android (all models),4705,"Sound pressure level, SPL(dBA)","GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",63
+2/3/2020 13:46:58,Android (all models),4705,"Sound pressure level, SPL(dBA)",GIX Woodshop: No machines (SPL only),44
+2/3/2020 13:47:16,Android (all models),4705,"Sound pressure level, SPL(dBA)","GIX Woodshop: Dust Collector  (SPL Only, measure from table saw operating pos.)",70
+2/3/2020 14:23:28,iPhone (all models),1613,Light Flux,Outdoors by GIX: Sunny,954
+2/3/2020 14:24:44,iPhone (all models),1613,"Sound pressure level, SPL(dBA)",Outdoors by GIX: Sunny,61
+2/4/2020 2:02:00,iPhone (all models),1613,Light Flux,your bed at night,1
+2/4/2020 2:04:48,iPhone (all models),1613,"Sound pressure level, SPL(dBA)",your bed at night,46.9
+2/4/2020 9:40:56,iPhone (all models),1613,Light Flux,breakfast table,109
+2/4/2020 9:41:49,iPhone (all models),1613,"Sound pressure level, SPL(dBA)",breakfast table,49.8
+2/4/2020 10:24:21,iPhone (all models),8057,"Sound pressure level, SPL(dBA)",In the car,65.5
+2/4/2020 11:29:54,iPhone (all models),8057,"Sound pressure level, SPL(dBA)",Starbucks at a table,83
+2/4/2020 12:29:02,iPhone (all models),1613,Light Flux,Starbucks at a table,53
+2/4/2020 12:30:15,iPhone (all models),1613,"Sound pressure level, SPL(dBA)",Starbucks at a table,78
+2/4/2020 12:48:34,iPhone (all models),1613,Light Flux,In the car,169
+2/4/2020 12:48:51,iPhone (all models),1613,"Sound pressure level, SPL(dBA)",In the car,58.1
+2/4/2020 15:12:24,Android (all models),3171,Light Flux,"GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",59.3
+2/4/2020 15:24:10,iPhone (all models),8057,"Sound pressure level, SPL(dBA)","GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",86
+2/4/2020 15:25:02,iPhone (all models),8057,"Sound pressure level, SPL(dBA)","GIX Woodshop: Dust Collector  (SPL Only, measure from table saw operating pos.)",83
+2/4/2020 15:25:47,iPhone (all models),8634,"Sound pressure level, SPL(dBA)",your bed at night,29
+2/4/2020 15:26:03,iPhone (all models),8634,"Sound pressure level, SPL(dBA)",In class (on writing desk),53.2
+2/4/2020 15:26:20,iPhone (all models),8634,"Sound pressure level, SPL(dBA)",Outdoors by GIX: Cloudy,64
+2/4/2020 15:26:37,iPhone (all models),8634,"Sound pressure level, SPL(dBA)",On a bus (while bus is stopped),62.4
+2/4/2020 15:26:51,iPhone (all models),8634,"Sound pressure level, SPL(dBA)",On a bus (Highway speed),67.2
+2/4/2020 15:27:24,iPhone (all models),8634,Light Flux,your bed at night,42
+2/4/2020 15:27:42,iPhone (all models),8634,Light Flux,breakfast table,52
+2/4/2020 15:28:04,iPhone (all models),8057,"Sound pressure level, SPL(dBA)",GIX Woodshop: Drill (SPL Only from omerating position),90
+2/4/2020 15:28:06,iPhone (all models),8634,Light Flux,In class (on writing desk),321
+2/4/2020 15:28:20,iPhone (all models),8634,Light Flux,Outdoors by GIX: Cloudy,7211
+2/4/2020 15:28:23,iPhone (all models),8057,"Sound pressure level, SPL(dBA)",GIX Woodshop: No machines (SPL only),46
+2/4/2020 15:29:48,iPhone (all models),8634,Light Flux,On a bus (while bus is stopped),239
+2/4/2020 15:34:29,Android (all models),1918,Light Flux,your bed at night,7
+2/4/2020 15:34:52,Android (all models),1918,Light Flux,In class (on writing desk),162
+2/4/2020 15:35:18,Android (all models),1918,Light Flux,Outdoors by GIX: Cloudy,175
+2/6/2020 0:30:10,Android (all models),3968,"Sound pressure level, SPL(dBA)",your bed at night,30
+2/6/2020 0:31:38,Android (all models),3968,"Sound pressure level, SPL(dBA)",breakfast table,30
+2/6/2020 0:34:18,Android (all models),3968,Light Flux,your bed at night,1
+2/6/2020 0:58:28,iPhone (all models),8057,Light Flux,your bed at night,1
+2/6/2020 3:50:04,iPhone (all models),4739,"Sound pressure level, SPL(dBA)",your bed at night,29.8
+2/6/2020 8:44:42,Android (all models),6123,Light Flux,breakfast table,70
+2/6/2020 8:44:55,Android (all models),6123,"Sound pressure level, SPL(dBA)",breakfast table,34
+2/6/2020 9:00:18,Android (all models),6123,Light Flux,your bed at night,0.1
+2/6/2020 9:00:34,Android (all models),6123,"Sound pressure level, SPL(dBA)",your bed at night,20
+2/6/2020 9:02:24,Android (all models),6123,Light Flux,Starbucks at a table,185
+2/6/2020 9:02:52,Android (all models),6123,"Sound pressure level, SPL(dBA)",Starbucks at a table,38
+2/6/2020 9:04:48,Android (all models),6123,Light Flux,In class (on writing desk),216
+2/6/2020 9:05:35,Android (all models),6123,"Sound pressure level, SPL(dBA)",In class (on writing desk),38.8
+2/6/2020 9:07:17,Android (all models),6123,Light Flux,Outdoors by GIX: Sunny,218
+2/6/2020 9:07:54,Android (all models),6123,"Sound pressure level, SPL(dBA)",Outdoors by GIX: Sunny,31
+2/6/2020 9:09:22,Android (all models),6123,Light Flux,Outdoors by GIX: Cloudy,330
+2/6/2020 9:09:43,Android (all models),6123,"Sound pressure level, SPL(dBA)",Outdoors by GIX: Cloudy,45
+2/6/2020 9:10:58,iPhone (all models),8057,Light Flux,breakfast table,1
+2/6/2020 9:11:38,Android (all models),6123,Light Flux,In the car,210
+2/6/2020 9:12:02,Android (all models),6123,"Sound pressure level, SPL(dBA)",In the car,41
+2/6/2020 9:13:49,Android (all models),6123,Light Flux,On a bus (while bus is stopped),155
+2/6/2020 9:14:31,Android (all models),6123,"Sound pressure level, SPL(dBA)",On a bus (while bus is stopped),72
+2/6/2020 9:16:18,Android (all models),6123,Light Flux,On a bus (Highway speed),132
+2/6/2020 9:16:56,Android (all models),6123,"Sound pressure level, SPL(dBA)",On a bus (Highway speed),75
+2/6/2020 9:18:03,Android (all models),6123,"Sound pressure level, SPL(dBA)",GIX Woodshop: No machines (SPL only),33
+2/6/2020 9:18:40,Android (all models),6123,Light Flux,"GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",141
+2/6/2020 9:19:19,Android (all models),6123,"Sound pressure level, SPL(dBA)","GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",61
+2/6/2020 9:20:12,Android (all models),6123,"Sound pressure level, SPL(dBA)","GIX Woodshop: Dust Collector  (SPL Only, measure from table saw operating pos.)",67
+2/6/2020 9:20:57,Android (all models),6123,"Sound pressure level, SPL(dBA)",GIX Woodshop: Drill (SPL Only from omerating position),51
+2/6/2020 9:41:34,iPhone (all models),8057,Light Flux,In class (on writing desk),274
+2/6/2020 9:54:13,Android (all models),3968,Light Flux,In class (on writing desk),532
+2/6/2020 9:55:00,Android (all models),3968,"Sound pressure level, SPL(dBA)",In class (on writing desk),43
+2/6/2020 12:25:23,iPhone (all models),4264,Light Flux,In class (on writing desk),173
+2/6/2020 12:25:42,iPhone (all models),4264,Light Flux,In class (on writing desk),175
+2/6/2020 12:26:10,iPhone (all models),4264,Light Flux,In class (on writing desk),184
+2/6/2020 12:26:34,iPhone (all models),4264,Light Flux,"GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",226
+2/6/2020 12:26:59,iPhone (all models),4264,Light Flux,"GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",279
+2/6/2020 12:27:35,iPhone (all models),4264,Light Flux,GIX Woodshop: No machines (SPL only),259
+2/6/2020 13:22:31,iPhone (all models),4739,"Sound pressure level, SPL(dBA)",Outdoors by GIX: Cloudy,74.6
+2/6/2020 13:26:10,iPhone (all models),4739,"Sound pressure level, SPL(dBA)",In class (on writing desk),52.7
+2/6/2020 13:30:27,iPhone (all models),4739,"Sound pressure level, SPL(dBA)","GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",76.4
+2/6/2020 13:29:24,iPhone (all models),4739,"Sound pressure level, SPL(dBA)",GIX Woodshop: No machines (SPL only),51.2
+2/6/2020 14:14:10,iPhone (all models),8057,Light Flux,Outdoors by GIX: Cloudy,387
+2/6/2020 14:42:29,iPhone (all models),2050,"Sound pressure level, SPL(dBA)",your bed at night,30
+2/6/2020 14:44:25,iPhone (all models),2050,"Sound pressure level, SPL(dBA)",In class (on writing desk),51.9
+2/6/2020 14:49:25,iPhone (all models),2050,"Sound pressure level, SPL(dBA)",breakfast table,35.5
+2/6/2020 14:51:10,iPhone (all models),2050,"Sound pressure level, SPL(dBA)",GIX Woodshop: No machines (SPL only),37
+2/6/2020 17:08:11,Android (all models),3968,Light Flux,breakfast table,350
+2/6/2020 17:08:46,Android (all models),3968,Light Flux,Outdoors by GIX: Cloudy,670
+2/6/2020 17:09:14,Android (all models),3968,"Sound pressure level, SPL(dBA)",Outdoors by GIX: Cloudy,50
+2/6/2020 17:09:49,Android (all models),3968,"Sound pressure level, SPL(dBA)",GIX Woodshop: No machines (SPL only),40
+2/6/2020 17:10:35,Android (all models),3968,Light Flux,"GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",609
+2/6/2020 17:11:02,Android (all models),3968,"Sound pressure level, SPL(dBA)","GIX Woodshop: Table Saw cutting (lux on table top, SPL from operating position)",60
+2/6/2020 17:11:38,Android (all models),3968,"Sound pressure level, SPL(dBA)","GIX Woodshop: Dust Collector  (SPL Only, measure from table saw operating pos.)",66
+2/6/2020 17:11:58,Android (all models),3968,"Sound pressure level, SPL(dBA)",GIX Woodshop: Drill (SPL Only from omerating position),63
