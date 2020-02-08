@@ -19,7 +19,7 @@ FIG_WINDOW_SIZE=(12,10)
 #
 #  How many students have entered data?
 #
-def StudentReport(ds):
+def StudentReport(ds,description):
     id_key = 'Your 4 digit ID'
     ids = ds[id_key].unique()
     print('{} students have made entries'.format(len(ids)))
@@ -30,13 +30,15 @@ def StudentReport(ds):
         npts.append(n)
     fig,ax = plt.subplots(figsize=FIG_WINDOW_SIZE)     
     ax = plt.hist(npts,bins=10)
-    plt.title('Student Sample Generation')
+    plt.title('Student Sample Generation: '+description)
     plt.xlabel('Number of Data Points')
     plt.ylabel('# of Students')
-    #plt.xticks(range(maxbin))
+    maxbin = 30
+    plt.xticks(range(maxbin))
     #plt.yticks(10.0*range(10))
-    #plt.xlim([0,maxbin])
-    #plt.ylim([0,100])
+    plt.xlim([0,maxbin])
+    plt.ylim([0,10])
+    plt.yticks(range(10))
     plt.grid(True)
 
 
@@ -61,10 +63,29 @@ def Dev_Difference(dataset, location, unit):
 #  dataset = Pandas dataframe
 #  loc1,loc2, string names of locations
 def Loc_Difference(dataset, loc1, loc2, unit):
+    maxbin= unit_range(unit)
     d = dataset[dataset.Quantity==unit]    # select measurement
     dloc1 = d.query('Location=="'+loc1+'"') # two locations
     dloc2 = d.query('Location=="'+loc2+'"')
     Difference(dloc1,dloc2, loc1, loc2, unit)
+    
+    mcol = 'Measurement Value (db or lux)'
+    #
+    #  histogram
+    fig,ax = plt.subplots(figsize=FIG_WINDOW_SIZE)
+    v1 = dloc1[mcol].tolist()
+    v2 = dloc2[mcol].tolist()
+    print('*(*(*(*(*    value counts: ', len(v1), len(v2))
+    ax = plt.hist(v1,bins=10,range=(0,maxbin))
+    ax = plt.hist(v2,bins=10,range=(0,maxbin))
+    titlestr =unit + 'values: '+loc1+' vs. '+loc2
+    plt.title(titlestr)
+    plt.ylabel('Number of measurements')
+    print('Xlabel: ', unit+' values')
+    plt.xlabel(unit+' values')  
+    plt.xlim([0,maxbin]) 
+    plt.grid(True)
+
     
 #
 #  Use the T-test to determine if the mean measurement from two datasets is 
@@ -77,7 +98,8 @@ def Difference(d1,d2,name1, name2, unit):
     m2 = d2[mcol].mean()
     n1 = len(d1.index)
     n2 = len(d2.index)
-    if n1 < 5 or n2 < 5:
+    min_size = 3
+    if n1 < 3 or n2 < 3:
         print('\n\n Warning - too few data samples: {} {}'.format(n1,n2))
         quit()
     print(' \nMeasurement: '+unit)
@@ -85,7 +107,7 @@ def Difference(d1,d2,name1, name2, unit):
     print(' {:^20.1f} {}         {:^20.1f} {}                Diff: {:4.1f} {}'.format(m1,unit,m2,unit, m2-m1,unit))
     print(' {:^20}             {:^20}'.format('n='+str(n1),'n='+str(n2)))
     
-    print('T stat: {:4.2f}, P-value: {:4.2f}'.format(T,p))
+    print('T stat: {:4.2f}, P-value: {:6.3f}'.format(T,p))
     if (p < 0.05):
         print('The difference is SIGNIFICANT')
     else:
@@ -98,27 +120,37 @@ def Difference(d1,d2,name1, name2, unit):
 #
 #  Make a basic histogram of measurements in a single location
 #
-def MeasurementHisto(dataset, location, unit):
+def MeasurementHisto(dataset, location, info_str, unit):
     mcol = 'Measurement Value (db or lux)'
-
+    maxbin = unit_range(unit)
+        
     dloc = dataset.query('Location=="'+location+'"')
-    fig,ax = plt.subplots(figsize=FIG_WINDOW_SIZE)     
+    #print(dloc.head())
+    #quit()
     dty = dloc[dloc.Quantity==unit]
-    
-    ax = plt.hist(dty[mcol],bins=10)
     #
-    #  overall histogram
-    plt.title(unit + 'values: '+location)
-    plt.xlabel('values')
-    if unit == 'SPL':
-        maxbin = 150  # hearing damage
-    elif unit == 'LUX':
-        maxbin = 1000 * (1+ int(dty['Measurement Value (db or lux)'].max() / 1000.0))
-    #plt.ylabel('')
-    #plt.xticks(range(maxbin))
-    #plt.yticks(10.0*range(10))
-    plt.xlim([0,maxbin])
-    #plt.ylim([0,100])
+    #  histogram
+    fig,ax = plt.subplots(figsize=FIG_WINDOW_SIZE)
+    values = dty[mcol].tolist()
+    print('value count: ', len(values), '\n',values)
+    ax = plt.hist(values,bins=10)
+    titlestr =unit + 'values: '+location+' '+info_str 
+    plt.title(titlestr)
+    plt.ylabel('Number of measurements')
+    print('Xlabel: ', unit+' values')
+    plt.xlabel(unit+' values')  
+    plt.xlim([0,maxbin]) 
     plt.grid(True)
 
-    
+    #fig,ax = plt.subplots(figsize=FIG_WINDOW_SIZE)     
+    #ax = plt.hist(npts,bins=10)
+    #plt.title('Student Sample Generation: '+description)
+    #plt.xlabel('Number of Data Points')
+    #plt.ylabel('# of Students')
+    #maxbin = 30
+    #plt.xticks(range(maxbin))
+    ##plt.yticks(10.0*range(10))
+    #plt.xlim([0,maxbin])
+    #plt.ylim([0,10])
+    #plt.yticks(range(10))
+    #plt.grid(True)

@@ -16,11 +16,18 @@ units = ['SPL','LUX']
 
 
 def get_a_location():
-    print('Enter a location to compare with {}'.format(locname))
     list_locations()
     l2 = input('Location selection: (integer):')
     l2 = int(l2)
-    return locations[l2]
+    return l2
+
+def unit_range(unit):   
+    if unit == 'SPL':
+        maxbin = 150  # hearing damage
+    elif unit == 'LUX':
+        #maxbin = 1000 * (1+ int(dty['Measurement Value (db or lux)'].max() / 1000.0))
+        maxbin = 1000
+    return maxbin
 
 # print debugging info
 def print_deb(flag, string):

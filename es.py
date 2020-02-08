@@ -20,12 +20,9 @@ import rsrch_questions as rq
 results = []
 Sfilename = 'Data/DeviceSensing_24-Jan-2020.csv'
 Pfilename = 'Data/PhoneSensing_24-Jan-2020.csv'
-
-#usage = '''
-    #>es [location] [unit]
-        #- location = integer code for measurement site
-        #- unit  =   SPL or LUX
-    #'''
+Sfilename = 'Data/DeviceSensing_07-Feb-2020.csv'
+Pfilename = 'Data/PhoneSensing_07-Feb-2020.csv'
+ 
 desloc = 0
 if not os.path.exists(Sfilename):
     print ("Can't find data file: {}".format(filename))
@@ -61,16 +58,11 @@ if False:
     print('')
 #print('Unique Locations so far: ')
 Slocations = sorted(list(dataS.Location.unique()))
-#print('Sensor Locations so far: ',len(Slocations))
-Plocations = sorted(list(dataP.Location.unique()))
-#print('Cell Phone Locations so far: ',len(Plocations))
-#for i in range(len(Plocations)):
-    #print (i,Plocations[i],Slocations[i])
+Plocations = sorted(list(dataP.Location.unique())) 
 B_locs = sorted(list(set(Slocations+Plocations)))
 #print('combined location list:', len(B_locs))
 #print(B_locs)
-setup_location_list(B_locs)
-#print(Slocations) 
+setup_location_list(B_locs) 
 
 
 ###############################
@@ -103,17 +95,30 @@ rename_tags(dataP)   # give the measurement types more compact names ('SPL', 'LU
 rename_tags(dataS)   # give the measurement types more compact names ('SPL', 'LUX')
 #print(data.head)
 
+# Remove Blake's test inputs  (userid 5555)
+id_key = 'Your 4 digit ID' 
+indexvalues = dataP[dataP[id_key]==5555].index
+dataP.drop(indexvalues, inplace=True)
+indexvalues = dataS[dataS[id_key]==5555].index
+dataS.drop(indexvalues, inplace=True)
+
+
 locname = locations[desloc]  # convert from int to full string name
      
      
-if True:
-    rq.StudentReport(dataP)
+#
+#        Select one or more research questions to analyze
+#
+     
+if False:
+    rq.StudentReport(dataP, 'Cell Phone (SPL/LUX all locs.)')
+    rq.StudentReport(dataS, 'Instrument Measurements')
     
 if False:
     # Are cell phone measurements differenct for Apple vs Android?
     rq.Dev_Difference(dataP, locname, unit)
     
-if False:        
+if True:        
     #
     #  Are two measurement distributions statistically different?
     #  (apply the T-test)
@@ -121,15 +126,19 @@ if False:
     #list_locations()
     #l2 = input('Location selection: (integer):')
     #l2 = int(l2)
+    print('Enter a location to compare with {}'.format(locname))
+    #('Cell Phone (1) or Instrument (0)?: ')
     loc2=locations[get_a_location()]
-    data = select_InstPhone('Phone',dataP, dataS)
+    #data = select_InstPhone('Phone',dataP, dataS)
+    data = select_InstPhone('Inst',dataP, dataS)
     rq.Loc_Difference(data, locname, loc2, unit)
 
 if False:
     #
     #  Make a basic histogram of measurements in a single location
     #
-    sel_data = rq.MeasurementHisto(data,locname,unit)     
+    sel_data = rq.MeasurementHisto(dataP,locname,'(Cell)',unit)     
+    sel_data = rq.MeasurementHisto(dataS,locname,'(Inst)',unit)     
 
 # show all graphs     
 plt.show()
