@@ -18,8 +18,8 @@ import rsrch_questions as rq
 #from matplotlib.ticker import MaxNLocator
 
 results = []
-Sfilename = 'Data/DeviceSensing_24-Jan-2020.csv'
-Pfilename = 'Data/PhoneSensing_24-Jan-2020.csv'
+#Sfilename = 'Data/DeviceSensing_24-Jan-2020.csv'
+#Pfilename = 'Data/PhoneSensing_24-Jan-2020.csv'
 Sfilename = 'Data/DeviceSensing_07-Feb-2020.csv'
 Pfilename = 'Data/PhoneSensing_07-Feb-2020.csv'
  
@@ -56,6 +56,7 @@ if False:
     print('Data frame columns: Cell Phones')
     print(list(dataP.columns.values))
     print('')
+    quit()
 #print('Unique Locations so far: ')
 Slocations = sorted(list(dataS.Location.unique()))
 Plocations = sorted(list(dataP.Location.unique())) 
@@ -71,6 +72,9 @@ setup_location_list(B_locs)
 #
     
 if len(sys.argv) ==1:
+    if(sys.argv[1] == 'StudentData'):
+        desloc = -1
+        unit = 'Student Data'
     desloc = 1
     unit = 'SPL'
 elif len(sys.argv) == 3:
@@ -88,8 +92,9 @@ else:
     print_help()
     quit()
 
-print ('Starting up with location {} and unit: {}'.format(desloc, unit))
-print (' Location {} is {}'.format(desloc, locations[desloc]))
+if desloc >= 0:
+    print ('Starting up with location {} and unit: {}'.format(desloc, unit))
+    print (' Location {} is {}'.format(desloc, locations[desloc]))
 #print(data.head)
 rename_tags(dataP)   # give the measurement types more compact names ('SPL', 'LUX')
 rename_tags(dataS)   # give the measurement types more compact names ('SPL', 'LUX')
@@ -102,14 +107,69 @@ dataP.drop(indexvalues, inplace=True)
 indexvalues = dataS[dataS[id_key]==5555].index
 dataS.drop(indexvalues, inplace=True)
 
-
-locname = locations[desloc]  # convert from int to full string name
-     
+if desloc >=0:  
+    locname = locations[desloc]  # convert from int to full string name
+else:
+    locname = 'All'
      
 #
 #        Select one or more research questions to analyze
 #
-     
+#        (set if stmt to True)
+
+
+if True:
+#
+#  Analyze student measurement numbers
+#
+
+    id_tag = 'Your 4 digit ID'
+    
+    set = 'Sensor'
+    #set = 'Phone'
+    
+    if set == 'Phone':    
+        data_set = dataP
+        descrip = 'Phone data entries'
+    elif set == 'Sensor':
+        data_set = dataS
+        descrip = 'Sensor data entries'
+    else:
+        print('Unknown data set selector: '+set)
+        quit()
+    nres = rq.StudentNumbers(data_set, descrip)
+    print('result shape: {}'.format(nres.shape))
+    print('id     # results')
+    print( nres)
+    n = len(nres.index)
+    navg = nres.mean()
+    nstd = nres.std()
+    nmed = nres.median()
+    print('{} students, avg # results: {:5.1f}  median: {:5.1f}'.format(n, navg,nmed))
+     #
+    #  histogram
+    fig,ax = plt.subplots(figsize=FIG_WINDOW_SIZE)
+    values = nres.tolist()
+    print('value count: ', len(values), '\n',values)
+    ax = plt.hist(values,bins=15)
+    titlestr = 'Student data collection rates: ' + descrip
+    plt.title(titlestr)
+    plt.ylabel('Number of students')
+    print('Xlabel: ', unit+' values')
+    plt.xlabel('N measurements')  
+    plt.xlim([0,40]) 
+    plt.ylim([0,10]) 
+    #
+    #  Add a normal distrib
+    #
+    Amp = 100 # make it look bigger
+    xmax = 40
+    es_plot_stat_bar(plt, 6.0, navg,nstd,lcolor='red')
+    es_plot_norm_curve(plt, xmax, navg, nstd, Amp)
+    plt.text(18, 8, '18 required measurements')
+    es_plot_stat_bar(plt,9.0, 18, 5, lcolor='green')
+    plt.grid(True)
+        
 if False:
     rq.StudentReport(dataP, 'Cell Phone (SPL/LUX all locs.)')
     rq.StudentReport(dataS, 'Instrument Measurements')
@@ -118,7 +178,7 @@ if False:
     # Are cell phone measurements differenct for Apple vs Android?
     rq.Dev_Difference(dataP, locname, unit)
     
-if True:        
+if False:        
     #
     #  Are two measurement distributions statistically different?
     #  (apply the T-test)

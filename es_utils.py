@@ -3,6 +3,7 @@
 #
 import datetime as dt
 from   dateutil.parser import parse
+from scipy.stats import norm
  
 ZEROTIME = dt.timedelta(seconds=0)
 ONEHOUR = dt.timedelta(0,0,0,0,0,1) # one hour
@@ -14,6 +15,33 @@ locations = []
 
 units = ['SPL','LUX']
 
+
+def es_plot_stat_bar(plt,yval, m,sd, lcolor='blue'):
+   #
+    #  make a horizontal bar for mean and += 1 SD
+    #
+    xl = [m-sd, m-sd, m, m, m+sd, m+sd, m-sd, m+sd]
+    #xl = [r.avg_pace - r.sd_pace,r.avg_pace - r.sd_pace, r.avg_pace, r.avg_pace, r.avg_pace + r.sd_pace, r.avg_pace + r.sd_pace, r.avg_pace - r.sd_pace, r.avg_pace + r.sd_pace]
+    #for j in range(0,len(xl)):
+        #xl[j] -= 300   # subtract off 5:00 pace
+    b1 = yval
+    tick = 0.25
+    b2 = b1+tick
+    b3 = b2+tick/2
+    b4 = b3+tick
+    b = (b1+b2)/2
+    yl = [ b1,b2,b1,b2,b1,b2,b,b]
+    for i in [0,2,4,6]:
+        x = [xl[i], xl[i+1]]
+        y = [yl[i], yl[i+1]]
+        plt.plot(x,y, linewidth= 2.0, alpha= 1.0,color=lcolor)
+        
+def es_plot_norm_curve(plt, xmax, navg,nstd, Amp,lcolor='r'): 
+    #
+    #  plot a normal distrib on top of a histogram
+    #
+    yn = Amp*norm.pdf(range(xmax), navg, nstd)
+    plt.plot(range(xmax), yn, lcolor)
 
 def get_a_location():
     list_locations()

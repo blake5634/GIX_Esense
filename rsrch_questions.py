@@ -88,6 +88,16 @@ def Loc_Difference(dataset, loc1, loc2, unit):
 
     
 #
+#  Find distrib of student results
+#
+#
+def StudentNumbers(data_set, descrip):
+    id_tag = 'Your 4 digit ID'
+    ids = data_set[id_tag]
+    return  ids.value_counts()
+    #return ids.unique(), ids.nunique()
+    return ids.groupby().count()
+#
 #  Use the T-test to determine if the mean measurement from two datasets is 
 #    significantly different (p<=0.05).
 #
