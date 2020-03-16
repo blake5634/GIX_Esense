@@ -20,15 +20,17 @@ import rsrch_questions as rq
 results = []
 #Sfilename = 'Data/DeviceSensing_24-Jan-2020.csv'
 #Pfilename = 'Data/PhoneSensing_24-Jan-2020.csv'
-Sfilename = 'Data/DeviceSensing_07-Feb-2020.csv'
-Pfilename = 'Data/PhoneSensing_07-Feb-2020.csv'
+#Sfilename = 'Data/DeviceSensing_07-Feb-2020.csv'
+#Pfilename = 'Data/PhoneSensing_07-Feb-2020.csv'
+Sfilename = 'Data/DeviceSensing.csv'
+Pfilename = 'Data/PhoneSensing.csv'
  
 desloc = 0
 if not os.path.exists(Sfilename):
-    print ("Can't find data file: {}".format(filename))
+    print ("Can't find data file: {}".format(Sfilename))
     quit()
 if not os.path.exists(Pfilename):
-    print ("Can't find data file: {}".format(filename))
+    print ("Can't find data file: {}".format(Sfilename))
     quit()
 
 #
@@ -44,10 +46,12 @@ dataS = dataS.fillna('') # empty cells become empty strings!
 # read and process Cell Phope measurements (from instruments)
 dataP = pd.read_csv(Pfilename,sep=',', engine='python') # '\s+' regexp for whitespace
 dataP = dataP.fillna('') # empty cells become empty strings!
-#print(dataP.head)
-#profile = pfr.ProfileReport(dataX, title='ES data Profiling Report')
-#profile.to_file(output_file="env_data.html")
-#quit()
+
+#
+# Figure out most recent data date
+#
+#print('Most recent data is: '+str(dataS.iloc[-1].Timestamp)))
+
 
 if False:
     print('\n\n')
@@ -71,7 +75,7 @@ setup_location_list(B_locs)
 # Process command line (now that we know data characteristics)
 #
     
-if len(sys.argv) ==1:
+if len(sys.argv) == 2:
     if(sys.argv[1] == 'StudentData'):
         desloc = -1
         unit = 'Student Data'
@@ -118,7 +122,7 @@ else:
 #        (set if stmt to True)
 
 
-if True:
+if False:
 #
 #  Analyze student measurement numbers
 #
@@ -150,15 +154,16 @@ if True:
     #  histogram
     fig,ax = plt.subplots(figsize=FIG_WINDOW_SIZE)
     values = nres.tolist()
-    print('value count: ', len(values), '\n',values)
+    #print('value count: ', len(values), '\n',values)
     ax = plt.hist(values,bins=15)
-    titlestr = 'Student data collection rates: ' + descrip
+    lastdate = str(data_set.iloc[-1].Timestamp)[0:8]
+    titlestr = lastdate + ': Student data collection rates: ' + descrip
     plt.title(titlestr)
     plt.ylabel('Number of students')
-    print('Xlabel: ', unit+' values')
-    plt.xlabel('N measurements')  
+    #print('Xlabel: ', unit+' values')
+    #plt.xlabel('N measurements')  
     plt.xlim([0,40]) 
-    plt.ylim([0,10]) 
+    plt.ylim([0,12]) 
     #
     #  Add a normal distrib
     #
@@ -174,7 +179,7 @@ if False:
     rq.StudentReport(dataP, 'Cell Phone (SPL/LUX all locs.)')
     rq.StudentReport(dataS, 'Instrument Measurements')
     
-if False:
+if True:
     # Are cell phone measurements differenct for Apple vs Android?
     rq.Dev_Difference(dataP, locname, unit)
     

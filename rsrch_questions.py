@@ -20,20 +20,22 @@ FIG_WINDOW_SIZE=(12,10)
 #  How many students have entered data?
 #
 def StudentReport(ds,description):
+    print('-0-0-0-0-0        GOT HERE')
     id_key = 'Your 4 digit ID'
     ids = ds[id_key].unique()
     print('{} students have made entries'.format(len(ids)))
     npts = []
+    maxbin = 30
     for id in ids:
         n = len(ds[ds[id_key]==id])
         print('id: {:4} pts: {}'.format(id,n))   
         npts.append(n)
     fig,ax = plt.subplots(figsize=FIG_WINDOW_SIZE)     
-    ax = plt.hist(npts,bins=10)
-    plt.title('Student Sample Generation: '+description)
+    ax = plt.hist(npts,bins=10, range=(0,maxbin))
+    lastdate = str(ds.iloc[-1].Timestamp)[0:7]
+    plt.title(lastdate+': Student Sample Generation: '+description)
     plt.xlabel('Number of Data Points')
     plt.ylabel('# of Students')
-    maxbin = 30
     plt.xticks(range(maxbin))
     #plt.yticks(10.0*range(10))
     plt.xlim([0,maxbin])
@@ -54,6 +56,15 @@ def Dev_Difference(dataset, location, unit):
     phoneOStype = 'Your Phone'
     devApp = d[d[phoneOStype]==apple]
     devAnd = d[d[phoneOStype]==android]
+    
+    #
+    #  Make a basic histogram of measurements 
+       #(single location)
+    #
+    #sel_data = MeasurementHisto(devApp,location,'(Apple iOS)',unit)     
+    #sel_data = MeasurementHisto(devAnd,location,'(Android)',unit)     
+    sel_data = DualMeasHisto(devApp, devAnd, location, 'Apple vs Android', unit)
+    
     print('Difference for measurements at '+location)
     Difference(devApp,devAnd, 'iPhone', 'Android', unit)
 #
@@ -105,7 +116,9 @@ def Difference(d1,d2,name1, name2, unit):
     mcol = 'Measurement Value (db or lux)'
     T,p = stats.ttest_ind(d1[mcol], d2[mcol],equal_var=True)
     m1 = d1[mcol].mean()
+    sd1 = d1[mcol].std()
     m2 = d2[mcol].mean()
+    sd2 = d2[mcol].std()
     n1 = len(d1.index)
     n2 = len(d2.index)
     min_size = 3
@@ -113,9 +126,10 @@ def Difference(d1,d2,name1, name2, unit):
         print('\n\n Warning - too few data samples: {} {}'.format(n1,n2))
         quit()
     print(' \nMeasurement: '+unit)
-    print(' {:^20} vs.  {:^20} '.format(name1, name2))
-    print(' {:^20.1f} {}         {:^20.1f} {}                Diff: {:4.1f} {}'.format(m1,unit,m2,unit, m2-m1,unit))
-    print(' {:^20}             {:^20}'.format('n='+str(n1),'n='+str(n2)))
+    print('      {:^20}        vs.       {:^20} '.format(name1, name2))
+    print('mean: {:^20.1f} {}    mean: {:^20.1f} {}      Diff: {:4.1f} {}'.format(m1,unit,m2,unit, m2-m1,unit))
+    print('  sd: {:^20.1f} {}      sd: {:^20.1f} {} '.format(sd1,unit,sd2,unit))
+    print('   n: {:^20d}            n: {:^20d}        '.format(n1,n2))
     
     print('T stat: {:4.2f}, P-value: {:6.3f}'.format(T,p))
     if (p < 0.05):
@@ -126,6 +140,39 @@ def Difference(d1,d2,name1, name2, unit):
     
 
 
+
+#
+#  Make a double histogram of two sets of measurements in a single location
+#
+def DualMeasHisto(dataset1, dataset2, location, info_str, unit):
+    mcol = 'Measurement Value (db or lux)'
+    maxbin = unit_range(unit)
+        
+    dloc1 = dataset1.query('Location=="'+location+'"')
+    dloc2 = dataset2.query('Location=="'+location+'"')
+    #print(dloc.head())
+    #quit()
+    dty1 = dloc1[dloc1.Quantity==unit]
+    dty2 = dloc2[dloc2.Quantity==unit]
+    #
+    #  histogram
+    nbins = 15
+    fig,ax = plt.subplots(figsize=FIG_WINDOW_SIZE)
+    values = dty1[mcol].tolist()
+    print('value count: ', len(values), '\n',values)
+    ax = plt.hist(values,bins=nbins,range=(0,maxbin))
+    values = dty2[mcol].tolist()
+    print('value count: ', len(values), '\n',values)
+    ax = plt.hist(values,bins=nbins,range=(0,maxbin),alpha=0.5)
+    titlestr =unit + 'values: '+location+' '+info_str 
+    plt.title(titlestr)
+    plt.ylabel('Number of measurements')
+    print('Xlabel: ', unit+' values')
+    plt.xlabel(unit+' values')  
+    plt.xlim([0,maxbin]) 
+    plt.ylim([0,70])
+    plt.grid(True)
+ 
 
 #
 #  Make a basic histogram of measurements in a single location
@@ -143,24 +190,13 @@ def MeasurementHisto(dataset, location, info_str, unit):
     fig,ax = plt.subplots(figsize=FIG_WINDOW_SIZE)
     values = dty[mcol].tolist()
     print('value count: ', len(values), '\n',values)
-    ax = plt.hist(values,bins=10)
+    ax = plt.hist(values,bins=10,range=(0,maxbin))
     titlestr =unit + 'values: '+location+' '+info_str 
     plt.title(titlestr)
     plt.ylabel('Number of measurements')
     print('Xlabel: ', unit+' values')
     plt.xlabel(unit+' values')  
     plt.xlim([0,maxbin]) 
+    plt.ylim([0,70])
     plt.grid(True)
-
-    #fig,ax = plt.subplots(figsize=FIG_WINDOW_SIZE)     
-    #ax = plt.hist(npts,bins=10)
-    #plt.title('Student Sample Generation: '+description)
-    #plt.xlabel('Number of Data Points')
-    #plt.ylabel('# of Students')
-    #maxbin = 30
-    #plt.xticks(range(maxbin))
-    ##plt.yticks(10.0*range(10))
-    #plt.xlim([0,maxbin])
-    #plt.ylim([0,10])
-    #plt.yticks(range(10))
-    #plt.grid(True)
+ 

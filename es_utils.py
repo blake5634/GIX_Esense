@@ -51,10 +51,10 @@ def get_a_location():
 
 def unit_range(unit):   
     if unit == 'SPL':
-        maxbin = 150  # hearing damage
+        maxbin = 150 # hearing damage
     elif unit == 'LUX':
         #maxbin = 1000 * (1+ int(dty['Measurement Value (db or lux)'].max() / 1000.0))
-        maxbin = 1000
+        maxbin = 5000
     return maxbin
 
 # print debugging info
